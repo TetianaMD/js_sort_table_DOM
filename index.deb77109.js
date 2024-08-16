@@ -1,0 +1,2 @@
+var e=document.querySelector("table"),t=e.querySelectorAll("th"),r=e.querySelector("tbody");t.forEach(function(e,t){e.addEventListener("click",function(){Array.from(r.querySelectorAll("tr")).sort(function(e,r){var l=e.querySelectorAll("td")[t].textContent.trim().replace(/[$,]/g,""),o=r.querySelectorAll("td")[t].textContent.trim().replace(/[$,]/g,"");return isNaN(parseFloat(l))||isNaN(parseFloat(o))?l.localeCompare(o):parseFloat(l)-parseFloat(o)}).forEach(function(e){return r.appendChild(e)})})});
+//# sourceMappingURL=index.deb77109.js.map
